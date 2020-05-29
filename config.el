@@ -19,8 +19,8 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-;; (setq doom-font (font-spec :family "Fira Code" :size 14))
-(setq doom-font (font-spec :family "JetBrains Mono" :size 14))
+(setq doom-font (font-spec :family "Fira Code" :size 14))
+;; (setq doom-font (font-spec :family "JetBrains Mono" :size 14))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -64,3 +64,14 @@
 
 ;; Projectile
 (setq projectile-project-search-path '("~/Dev/"))
+
+;; Dired
+(setq dired-listing-switches "-la")
+
+;; Pretty-code
+;; (plist-put +pretty-code-symbols :and nil)
+;; (plist-put +pretty-code-symbols :or nil)
+;; (plist-put +pretty-code-symbols :for nil)
+;; (plist-put +pretty-code-symbols :int nil)
+;; (plist-put +pretty-code-symbols :float nil)
+;; (plist-put +pretty-code-symbols :x nil)
