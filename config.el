@@ -59,8 +59,15 @@
 (setq racket-racket-program "/Applications/Racket_v7_6/bin/racket")
 (setq racket-raco-program "/Applications/Racket_v7_6/bin/raco")
 
-;; Org mode
-(setq org-directory "/Users/matjazmuhic/Dropbox/orgmode")
+;; org-mode
+(setq org-directory "~/Dropbox/orgmode")
+
+;; org-roam
+;; (make-directory "~/Dropbox/orgmode/orgroam")
+(setq org-roam-buffer-width 0.4)
+(setq org-roam-directory "~/Dropbox/orgmode/orgroam")
+(add-hook 'after-init-hook 'org-roam-mode)
+(setq org-roam-link-title-format "> %s")
 
 ;; Projectile
 (setq projectile-project-search-path '("~/Dev/"))
@@ -68,10 +75,5 @@
 ;; Dired
 (setq dired-listing-switches "-la")
 
-;; Pretty-code
-;; (plist-put +pretty-code-symbols :and nil)
-;; (plist-put +pretty-code-symbols :or nil)
-;; (plist-put +pretty-code-symbols :for nil)
-;; (plist-put +pretty-code-symbols :int nil)
-;; (plist-put +pretty-code-symbols :float nil)
-;; (plist-put +pretty-code-symbols :x nil)
+;; (setq org-babel-js-function-wrapper "console.log((function() {%s})())")
+(setq org-babel-js-function-wrapper "%s")
