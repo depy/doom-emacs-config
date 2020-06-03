@@ -19,7 +19,7 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "Fira Code" :size 14))
+(setq doom-font (font-spec :family "Menlo" :size 14))
 ;; (setq doom-font (font-spec :family "JetBrains Mono" :size 14))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
@@ -31,7 +31,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+;; (setq org-directory "~/org/")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -61,13 +61,6 @@
 
 ;; org-mode
 (setq org-directory "~/Dropbox/orgmode")
-
-;; org-roam
-;; (make-directory "~/Dropbox/orgmode/orgroam")
-(setq org-roam-buffer-width 0.4)
-(setq org-roam-directory "~/Dropbox/orgmode/orgroam")
-(add-hook 'after-init-hook 'org-roam-mode)
-(setq org-roam-link-title-format "> %s")
 
 ;; Projectile
 (setq projectile-project-search-path '("~/Dev/"))
