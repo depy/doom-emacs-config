@@ -70,3 +70,8 @@
 
 ;; (setq org-babel-js-function-wrapper "console.log((function() {%s})())")
 (setq org-babel-js-function-wrapper "%s")
+
+;; Deft
+;; (setq deft-extensions '("txt" "org"))
+;; (setq deft-directory "~/Dropbox/orgmode")
+;; (setq deft-recursive t)
