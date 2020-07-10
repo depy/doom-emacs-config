@@ -55,8 +55,8 @@
 ;; they are implemented.
 
 ;; Racket
-(setq racket-racket-program "/Applications/Racket_v7_6/bin/racket")
-(setq racket-raco-program "/Applications/Racket_v7_6/bin/raco")
+(setq racket-racket-program "/Applications/Racket v7.7/bin/racket")
+(setq racket-raco-program "/Applications/Racket v7.7/bin/raco")
 
 ;; org-mode
 (setq org-directory "~/Dropbox/orgmode")
