@@ -47,3 +47,4 @@
 ;(package! builtin-package :recipe (:branch "develop"))
 
 (package! typescript-mode)
+(package! exec-path-from-shell)

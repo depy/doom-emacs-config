@@ -74,3 +74,13 @@
 ;; (setq deft-extensions '("txt" "org"))
 ;; (setq deft-directory "~/Dropbox/orgmode")
 ;; (setq deft-recursive t)
+
+;; exec-path-from-shell
+;; A GNU Emacs library to ensure environment variables inside Emacs look the same as in the user's shell.
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
+
+;; Rust
+(after! rustic
+  (setq rustic-format-on-save t)
+  (setq rustic-lsp-server 'rust-analyzer))
