@@ -48,6 +48,6 @@
 
 (package! typescript-mode)
 (package! exec-path-from-shell)
-(package! eww)
 (package! web-mode)
+(package! w3m)
 ;; (package! svelte-mode)
