@@ -50,4 +50,5 @@
 (package! exec-path-from-shell)
 (package! web-mode)
 (package! w3m)
+(package! nasm-mode)
 ;; (package! svelte-mode)

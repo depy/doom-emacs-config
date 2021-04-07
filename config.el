@@ -55,6 +55,9 @@
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
 
+;; LSP
+(setq lsp-idle-delay 0.5)  ;; clangd is fast
+
 ;; Racket
 (setq racket-racket-program "/Applications/Racket v7.7/bin/racket")
 (setq racket-raco-program "/Applications/Racket v7.7/bin/raco")
@@ -70,6 +73,9 @@
 
 ;; (setq org-babel-js-function-wrapper "console.log((function() {%s})())")
 (setq org-babel-js-function-wrapper "%s")
+(defun org-babel-execute:typescript (body params)
+  (let ((org-babel-js-cmd "TS_NODE_FILES=true TS_NODE_TRANSPILE_ONLY=true ts-node < "))
+    (org-babel-execute:js body params)))
 
 ;; Deft
 ;; (setq deft-extensions '("txt" "org"))
@@ -98,3 +104,7 @@
                    "")
                   (t elem)))
               mode-line-modes))
+
+;; Set C++11 as default
+(add-hook 'c++-mode-hook (lambda () (setq flycheck-gcc-language-standard "c++11")))
+(add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-args "-std=c++11")))
